@@ -13,11 +13,7 @@
   padding: 0 15px;
 }
 
-.footer-col h4 {
-  position: relative;
-}
-
-.footer-col ul li:not(:last-child) {
+.footer-col ul li {
   margin-bottom: 20px;
 }
 
