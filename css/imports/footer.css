@@ -1,11 +1,12 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer {
+footer {
   background-color: var(--black);
   padding: 70px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-col {
@@ -37,12 +38,12 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--dark-grey);
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--white);
   transition: all 0.5s ease;
 }
 
@@ -54,6 +55,7 @@
 .copyright {
   color: var(--white);
   text-align: center;
+  margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -63,7 +65,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 828px) {
   .footer-col {
     width: 50%;
   }
