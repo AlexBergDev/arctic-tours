@@ -18,7 +18,7 @@
 }
 
 .footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-col ul li a {
@@ -53,6 +53,11 @@
 .footer-col .social-links a:hover {
   color: var(--black);
   background-color: var(--white);
+}
+
+.copyright {
+  color: var(--white);
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
