@@ -7,11 +7,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
 }
 
 .footer-col {
   width: 25%;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .footer-col ul li {
@@ -53,22 +57,10 @@ footer {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
-}
-
-@media (max-width: 1024px) {
-  .footer-col {
-    width: 30%;
-    margin-bottom: 30px;
-  }
+  width: 90%;
 }
 
 @media (max-width: 828px) {
-  .footer-col {
-    width: 50%;
-  }
-}
-
-@media (max-width: 574px) {
   .footer-col {
     width: 100%;
     text-align: center;
