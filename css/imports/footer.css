@@ -19,11 +19,7 @@ footer {
 }
 
 .footer-col ul li a {
-  font-size: 16px;
   text-transform: capitalize;
-  color: var(--white);
-  text-decoration: none;
-  font-weight: 300;
   color: var(--light-grey);
   display: block;
   transition: all 0.3s ease;
@@ -56,6 +52,7 @@ footer {
   color: var(--white);
   text-align: center;
   margin-top: 30px;
+  font-size: 14px;
 }
 
 @media (max-width: 1024px) {
