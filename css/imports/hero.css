@@ -32,3 +32,9 @@
   border: 2px solid var(--black);
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-button {
+    padding: 6px 40px;
+  }
+}
