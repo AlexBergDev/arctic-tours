@@ -1,0 +1,21 @@
+.button {
+  color: var(--black);
+  font-size: 10px;
+  font-weight: bold;
+  border: 2px solid var(--black);
+  padding: 3px 30px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 6px 40px;
+  }
+}
