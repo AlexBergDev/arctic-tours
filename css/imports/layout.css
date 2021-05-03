@@ -8,10 +8,6 @@ ul {
   list-style: none;
 }
 
-.front-image {
-  background-image: url("../../images/header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  padding-top: 100px;
+main h2 {
+  text-align: center;
 }
