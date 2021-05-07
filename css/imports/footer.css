@@ -60,6 +60,7 @@ footer {
   width: 90%;
 }
 
+/* Small tablets & Mobile */
 @media (max-width: 828px) {
   .footer-col {
     width: 100%;
