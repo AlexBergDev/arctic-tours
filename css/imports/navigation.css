@@ -69,12 +69,14 @@ nav {
   transition: all 0.3s ease;
 }
 
+/* Tablets */
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -112,6 +114,7 @@ nav {
   transform: translateX(0%);
 }
 
+/* Mobile Navigation Animation */
 @keyframes navLinkFade {
   from {
     opacity: 0;
