@@ -42,7 +42,9 @@ main h2 {
 
 .text {
   padding: 25px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-between;
 }
