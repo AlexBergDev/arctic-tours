@@ -1,3 +1,4 @@
+/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 /* Hero title */
@@ -48,6 +49,7 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Global styles */
 p {
   font-family: "Poppins", sans-serif;
   color: var(--black);
