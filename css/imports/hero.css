@@ -1,14 +1,94 @@
-.hero {
-  background-image: url("../../images/header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  padding-top: 100px;
+/* Carousel slider */
+
+.carousel {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.slider {
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 400%;
+  transition: all 0.3s ease;
+}
+
+.slider section {
+  flex-basis: 100%;
   justify-content: center;
   align-items: center;
-  background: var(--opacity-black);
+  flex-direction: column;
+  display: flex;
+  font-size: 20px;
+  background-color: var(--opacity-black);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow i {
+  font-size: 40px;
+  -webkit-user-select: none;
+  color: var(--white);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.control ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+
+.control ul li {
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.control ul li.selected {
+  background: transparent;
+}
+
+.slider-1 {
+  background-image: url("../../images/header_1.jpg");
+}
+
+.slider-2 {
+  background-image: url("../../images/header_2.jpg");
+}
+
+.slider-3 {
+  background-image: url("../../images/header_3.jpg");
+}
+
+.slider-4 {
+  background-image: url("../../images/header_4.jpg");
 }
 
 .hero h1 {
