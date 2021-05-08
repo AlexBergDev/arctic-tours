@@ -39,7 +39,7 @@
 .arrow i {
   font-size: 40px;
   -webkit-user-select: none;
-  color: var(--white);
+  color: var(--opacity-button);
 }
 
 .left {
@@ -64,8 +64,8 @@
 .control ul li {
   width: 10px;
   height: 10px;
-  background: var(--white);
-  border: 1px solid var(--white);
+  background: var(--opacity-button);
+  border: 1px solid var(--opacity-button);
   border-radius: 50px;
   margin: 10px;
   cursor: pointer;
