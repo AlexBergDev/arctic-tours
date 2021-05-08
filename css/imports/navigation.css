@@ -8,6 +8,7 @@ nav {
   min-height: 8vh;
   background-color: var(--white);
   border-bottom: solid var(--box-line) 1px;
+  z-index: 2;
 }
 
 .logo {
