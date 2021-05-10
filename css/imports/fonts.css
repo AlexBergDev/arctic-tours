@@ -22,6 +22,9 @@ h2 {
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* Second page title */
@@ -64,7 +67,7 @@ a {
   font-family: "Poppins", sans-serif;
   color: var(--black);
   letter-spacing: 3px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
