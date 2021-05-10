@@ -22,7 +22,7 @@
 }
 
 .navigation-back a {
-  margin-top: 40px;
+  margin-top: 46px;
   margin-bottom: -50px;
   margin-left: 10px;
   color: var(--grey);
@@ -45,11 +45,17 @@
   .button {
     padding: 5px 35px;
   }
+  .navigation-back a {
+    margin-top: 40px;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
   .button {
     padding: 6px 40px;
+  }
+  .navigation-back a {
+    margin-top: 38px;
   }
 }
