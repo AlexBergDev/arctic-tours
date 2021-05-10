@@ -59,21 +59,23 @@ ul {
 .navigation-back {
   margin-top: 85px;
   margin-bottom: -55px;
-  display: flex;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .navigation-back a {
-  color: var(--dark-blue);
+  color: var(--grey);
+  font-size: 10px;
+  font-weight: bold;
+  border: 2px solid var(--light-grey);
+  padding: 5px 20px;
+  text-transform: uppercase;
 }
 
 .navigation-back a:hover {
-  color: var(--grey)
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--black);
   transition: all 0.3s ease;
-}
-
-.navigation-back p {
-  font-size: 12px;
 }
 
 .about {
