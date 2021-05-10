@@ -87,7 +87,7 @@ ul {
 }
 
 .picture-about {
-  max-height: 300px;
+  max-height: 200px;
   background-color: var(--opacity-black);
   background-repeat: no-repeat;
   background-size: cover;
