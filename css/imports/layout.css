@@ -26,6 +26,10 @@ ul {
   flex: 1 1 400px;
 }
 
+.col-2 {
+  min-height: 600px;
+}
+
 .col img {
   max-height: 400px;
   flex-shrink: 0;
