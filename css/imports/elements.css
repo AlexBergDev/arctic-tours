@@ -14,6 +14,28 @@
   transition: all 0.3s ease;
 }
 
+.navigation-back {
+  margin-top: 85px;
+  margin-bottom: -28px;
+  margin-left: 10px;
+}
+
+.navigation-back a {
+  color: var(--grey);
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid var(--light-grey);
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+
+.navigation-back a:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  transition: all 0.3s ease;
+}
+
 /* Tablet */
 @media screen and (max-width: 968px) {
   .button {
