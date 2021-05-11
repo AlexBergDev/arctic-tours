@@ -1,5 +1,4 @@
 input[type="text"],
-input[type="password"],
 textarea {
   padding: 10px;
   width: 75%;
@@ -33,7 +32,6 @@ form p {
 /* --- Mobile Styles --- */
 @media only screen and (max-width: 790px) {
   input[type="text"],
-  input[type="password"],
   textarea {
     width: 95%;
     padding: 16px;
@@ -44,19 +42,3 @@ form p {
     justify-content: center;
   }
 }
-
-/* --- Tablet Styles --- 
-@media only screen and (min-width: 791px) and (max-width: 950px) {
-  label {
-    margin-left: 15%;
-    margin-top: 30px;
-  }
-}
-/* --- Desktop Styles ---
-@media only screen and (min-width: 951px) {
-  label {
-    margin-left: 15%;
-    margin-top: 30px;
-  }
-}
-*/
