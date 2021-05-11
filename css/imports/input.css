@@ -8,6 +8,7 @@ textarea {
   left: 50%;
   top: 50%;
   margin: 0 auto;
+  box-sizing: border-box;
   display: block;
   margin-top: 20px;
   margin-bottom: 30px;
