@@ -9,6 +9,7 @@ textarea {
   top: 50%;
   margin: 0 auto;
   box-sizing: border-box;
+  border-radius: 0px;
   display: block;
   margin-top: 20px;
   margin-bottom: 30px;
