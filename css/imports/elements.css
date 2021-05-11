@@ -42,6 +42,42 @@
   transition: all 0.3s ease;
 }
 
+/* Error feedback */
+.error {
+  border: 1px solid var(--red);
+  color: var(--red);
+  background: var(--light-grey);
+  padding: 1em;
+  border-radius: 15px;
+  margin: 40px;
+}
+
+.error:after {
+  content: ". An error occurred. Please try again later or contact us.";
+}
+
+/* Loader */
+.loader {
+  border: 16px solid var(--white);
+  border-top: 16px solid var(--red);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  transform: translateX(-50%);
+  display: flex;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Tablet */
 @media screen and (max-width: 968px) {
   .button {
