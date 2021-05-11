@@ -42,6 +42,10 @@
   transition: all 0.3s ease;
 }
 
+button {
+  background-color: transparent;
+}
+
 /* Error feedback */
 .error {
   border: 1px solid var(--red);
