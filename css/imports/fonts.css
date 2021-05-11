@@ -58,6 +58,7 @@ p {
   letter-spacing: 3px;
   font-size: 10px;
   font-weight: 300;
+  line-height: 1.85;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -71,6 +72,37 @@ a {
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contact Form */
+input[type="text"],
+input[type="password"],
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-error {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 /* Tablets */
