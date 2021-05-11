@@ -32,6 +32,7 @@ ul {
 
 .col img {
   max-height: 400px;
+  max-width: 400px;
   flex-shrink: 0;
   object-fit: cover;
   min-width: 100%;
