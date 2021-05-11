@@ -16,17 +16,14 @@
   transition: all 0.3s ease;
 }
 
-.navigation-back {
+.button-light {
   display: flex;
   max-width: 1000px;
   margin: 40px auto 0 auto;
   margin-bottom: 40px;
 }
 
-.navigation-back a {
-  margin-top: 46px;
-  margin-bottom: -50px;
-  margin-left: 10px;
+.button-light a {
   color: var(--grey);
   font-size: 11px;
   font-weight: bold;
@@ -35,15 +32,25 @@
   text-transform: uppercase;
 }
 
-.navigation-back a:hover {
+.button-light a:hover {
   color: var(--white);
   background-color: var(--black);
   border: 2px solid var(--black);
   transition: all 0.3s ease;
 }
 
+.back a {
+  margin-top: 46px;
+  margin-bottom: -50px;
+  margin-left: 10px;
+}
+
 button {
   background-color: transparent;
+}
+
+.load-more {
+  justify-content: center;
 }
 
 /* Error feedback */
