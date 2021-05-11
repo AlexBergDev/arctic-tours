@@ -1,0 +1,59 @@
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 10px;
+  width: 75%;
+  border: 1px solid var(--grey);
+  background-color: var(--arctic-blue);
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+label {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  text-align: center;
+}
+
+form p {
+  margin: 20px;
+}
+
+/* --- Mobile Styles --- */
+@media only screen and (max-width: 790px) {
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 95%;
+    padding: 16px;
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* --- Tablet Styles --- 
+@media only screen and (min-width: 791px) and (max-width: 950px) {
+  label {
+    margin-left: 15%;
+    margin-top: 30px;
+  }
+}
+/* --- Desktop Styles ---
+@media only screen and (min-width: 951px) {
+  label {
+    margin-left: 15%;
+    margin-top: 30px;
+  }
+}
+*/
