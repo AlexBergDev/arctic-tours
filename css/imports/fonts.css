@@ -76,7 +76,6 @@ a {
 
 /* Contact Form */
 input[type="text"],
-input[type="password"],
 textarea {
   font-family: "Poppins", sans-serif;
   color: var(--black);
