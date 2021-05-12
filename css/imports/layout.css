@@ -30,7 +30,13 @@ ul {
   min-height: 600px;
 }
 
+.col-3 {
+  background-color: var(--arctic-blue);
+  margin: 3px;
+}
+
 .col img {
+  background-color: transparent;
   max-height: 400px;
   max-width: 400px;
   flex-shrink: 0;
@@ -48,3 +54,30 @@ ul {
 .content {
   padding: 38px;
 }
+
+.post-image {
+  height: 300px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+
+/* --- Mobile Styles --- */
+@media only screen and (max-width: 790px) {
+  .post-image {
+    width: 100%;
+  }
