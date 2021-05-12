@@ -22,8 +22,11 @@ ul {
 .col {
   background-color: var(--arctic-blue);
   margin: 3px;
-  min-height: 400px;
   flex: 1 1 400px;
+}
+
+.col-1 {
+  min-height: 400px;
 }
 
 .col-2 {
@@ -36,7 +39,6 @@ ul {
 }
 
 .col img {
-  background-color: transparent;
   max-height: 400px;
   max-width: 400px;
   flex-shrink: 0;
