@@ -14,7 +14,6 @@ async function fetchPosts() {
     }
 
     catch(error) {
-        console.log(error);
         resultsContainer.innerHTML = message("error", error);
     }
     
@@ -24,12 +23,11 @@ fetchPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post) {
-        console.log(post);
         resultsContainer.innerHTML += `<div class="col col-1">
                                             <div class="box">
                                                 <h3 class="content">${post.name}</h3>
                                                 <p class="content">${post.description}</p> 
-                                                <a class="button" href="#">Read More</a>
+                                                <a class="button" href="post.html?id=${post.id}">Read More</a>
                                             </div>
                                         </div>
 
