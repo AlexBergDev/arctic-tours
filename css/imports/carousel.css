@@ -1,101 +1,112 @@
-/* Carousel slider */
-
-.carousel {
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  background: #fff;
+.mySlides {
   margin-top: 70px;
-  z-index: 1;
+  max-height: 380px;
+  overflow: hidden;
 }
 
-.slider {
-  display: flex;
-  height: 100%;
-  width: 400%;
-  transition: all 0.3s ease;
+.mySlides img {
+  vertical-align: middle;
 }
 
-.slider section {
-  flex-basis: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  font-size: 20px;
-  background-color: var(--opacity-black);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.left,
-.right {
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: -100px;
+  transition: 0.6s ease;
+  border-radius: 0 6px 6px 0;
+  user-select: none;
 }
 
-.arrow i {
-  font-size: 40px;
-  -webkit-user-select: none;
-  color: var(--opacity-button);
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.arrow i:hover {
-  transition: all 0.3s ease;
-  color: var(--opacity-black);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
-
-.control ul {
-  list-style: none;
-  display: flex;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  padding: 8px 12px;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin: 0;
-  padding: 0;
-  transform: translate(-50%);
+  bottom: 100px;
+  width: 80%;
+  margin: 50px;
+  text-align: center;
 }
 
-.control ul li {
-  width: 10px;
-  height: 10px;
-  background: var(--opacity-button);
-  border: 1px solid var(--opacity-button);
-  border-radius: 50px;
-  margin: 10px;
+.title {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.control ul li.selected {
-  background: transparent;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
-.control ul li.slect .slider-1 {
-  background-image: url("../../images/header_1.jpg");
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.slider-2 {
-  background-image: url("../../images/header_2.jpg");
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.slider-3 {
-  background-image: url("../../images/header_3.jpg");
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.slider-4 {
-  background-image: url("../../images/header_4.jpg");
-}
-
+/* Carousel slider */
 .hero h1 {
   color: var(--white);
   padding-bottom: 30px;
@@ -109,6 +120,13 @@
   border: 2px solid var(--white);
   padding: 3px 30px;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-button:hover {
@@ -116,6 +134,13 @@
   background-color: var(--opacity-white);
   border: 2px solid var(--black);
   transition: all 0.3s ease;
+}
+
+.prev i,
+.next i {
+  font-size: 40px;
+  -webkit-user-select: none;
+  color: var(--light-grey);
 }
 
 /* Tablet */
