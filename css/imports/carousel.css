@@ -6,6 +6,9 @@
 
 .mySlides img {
   vertical-align: middle;
+  -webkit-filter: brightness(20%);
+  filter: brightness(80%);
+  z-index: 1;
 }
 
 /* Slideshow container */
@@ -41,6 +44,7 @@
 .prev:hover,
 .next:hover {
   background-color: var(--opacity-black);
+  filter: brightness(200%);
 }
 
 /* Caption text */
@@ -56,11 +60,12 @@
 
 .title {
   color: #f2f2f2;
-  padding: 8px 12px;
+  padding: 12px 18px;
   position: absolute;
   top: 100px;
   width: 100%;
   text-align: center;
+  filter: brightness(200%);
 }
 
 /* The dots/bullets/indicators */
@@ -155,5 +160,10 @@
 @media screen and (max-width: 768px) {
   .hero-button {
     padding: 6px 40px;
+  }
+
+  .title {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
