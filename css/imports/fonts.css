@@ -63,12 +63,17 @@ p {
 a {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 2.55px;
+  letter-spacing: 1.25px;
   font-size: 12px;
-  font-weight: 300;
-  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark-blue)
+  text-decoration: underline;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+  color: var(--medium-blue)
 }
 
 /* Contact Form */
