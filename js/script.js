@@ -26,7 +26,7 @@ fetchPosts();
 function createSlider(slider) {
     slider.forEach(function(sliders) {
         carouselContainer.innerHTML += `<div class="mySlides fade">
-                                            <a href="blog.html">
+                                            <a href="post.html?id=${sliders.id}">
                                             <img src="${sliders.images[0].src}" style="width:100%">
                                             <h1 class="title">${sliders.name}</h1>
                                             </a>
