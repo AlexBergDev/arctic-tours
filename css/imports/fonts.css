@@ -109,7 +109,7 @@ label {
 }
 
 /* Tablets */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 968px) {
   p {
     font-size: 13px;
   }
