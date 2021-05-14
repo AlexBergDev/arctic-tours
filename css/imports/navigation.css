@@ -27,7 +27,7 @@ nav {
 .brand {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
@@ -68,6 +68,13 @@ nav {
   background-color: var(--black);
   margin: 5px;
   transition: all 0.3s ease;
+}
+
+.current {
+  color: var(--white);
+}
+
+.current:hover {
 }
 
 /* Tablets */
