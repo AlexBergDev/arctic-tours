@@ -27,6 +27,8 @@ footer {
   color: var(--light-grey);
   display: block;
   transition: all 0.3s ease;
+  letter-spacing: 3px;
+  text-decoration: none;
 }
 
 .footer-col ul li a:hover {
