@@ -23,6 +23,7 @@ ul {
   background-color: var(--arctic-blue);
   margin: 3px;
   flex: 1 1 400px;
+  height: 400px;
 }
 
 .col-1 {
