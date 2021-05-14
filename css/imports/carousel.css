@@ -6,8 +6,8 @@
 
 .mySlides img {
   vertical-align: middle;
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
+  -webkit-filter: brightness(65%);
+  filter: brightness(65%);
   z-index: 1;
 }
 
