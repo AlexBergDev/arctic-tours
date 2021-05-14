@@ -27,7 +27,8 @@ function createSlider(slider) {
     slider.forEach(function(sliders) {
         carouselContainer.innerHTML += `<div class="mySlides fade">
                                             <img src="${sliders.images[0].src}" style="width:100%">
-                                            <h1 class="title">${sliders.name}</h1>
+                                            <div class="mask"></div>
+                                            <h1 class="title">Explore the Arctic Here</h1>
                                         </div>`;
     })
 }
