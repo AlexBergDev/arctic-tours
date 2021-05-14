@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".row");
 
-const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products";
+const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=10";
 
 async function fetchPosts() {
 
