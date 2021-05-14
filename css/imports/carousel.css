@@ -1,5 +1,5 @@
 .mySlides {
-  margin-top: 67px;
+  margin-top: 120px;
   max-height: 380px;
   overflow: hidden;
 }
@@ -156,6 +156,10 @@
   .hero-button {
     padding: 5px 35px;
   }
+
+  .mySlides {
+    margin-top: 100px;
+  }
 }
 
 /* Mobile */
@@ -167,5 +171,9 @@
   .title {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .mySlides {
+    margin-top: 67px;
   }
 }
