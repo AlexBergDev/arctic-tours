@@ -42,6 +42,11 @@
   color: var(--opacity-button);
 }
 
+.arrow i:hover {
+  transition: all 0.3s ease;
+  color: var(--opacity-black);
+}
+
 .left {
   left: 10px;
 }
