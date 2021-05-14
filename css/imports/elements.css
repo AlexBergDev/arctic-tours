@@ -16,7 +16,8 @@
   transition: all 0.3s ease;
 }
 
-.button-light {
+.button-light,
+.back-icon {
   display: flex;
   max-width: 1000px;
   margin: 40px auto 0 auto;
@@ -39,9 +40,20 @@
   transition: all 0.3s ease;
 }
 
+.back-icon i {
+  font-size: 40px;
+  -webkit-user-select: none;
+  color: var(--light-grey);
+}
+
+.back-icon i:hover {
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
 .back a {
   margin-top: 46px;
-  margin-bottom: -50px;
+  margin-bottom: -85px;
   margin-left: 10px;
 }
 
