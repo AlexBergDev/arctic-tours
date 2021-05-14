@@ -28,7 +28,6 @@ function createSlider(slider) {
         carouselContainer.innerHTML += `<div class="mySlides fade">
                                             <img src="${sliders.images[0].src}" style="width:100%">
                                             <h1 class="title">${sliders.name}</h1>
-                                            <p class="text">${sliders.short_description}</p>
                                         </div>`;
     })
 }
