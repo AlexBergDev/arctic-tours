@@ -26,9 +26,10 @@ fetchPosts();
 function createSlider(slider) {
     slider.forEach(function(sliders) {
         carouselContainer.innerHTML += `<div class="mySlides fade">
+                                            <a href="blog.html">
                                             <img src="${sliders.images[0].src}" style="width:100%">
-                                            <div class="mask"></div>
-                                            <h1 class="title">Explore the Arctic Here</h1>
+                                            <h1 class="title">${sliders.name}</h1>
+                                            </a>
                                         </div>`;
     })
 }
