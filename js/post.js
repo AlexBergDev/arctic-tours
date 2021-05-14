@@ -46,16 +46,23 @@ function createHTML(details) {
                                             </div>
 
                                             <div class="col">
-                                                <img src="${details.images[1].src}" alt="${details.name}">
+                                                <img src="${details.images[1].src}" alt="${details.name}" onclick="onClick(this)" class="modal-hover-opacity">
                                             </div>
 
                                             <div class="col">
-                                                <img src="${details.images[2].src}" alt="${details.name}">
+                                                <img src="${details.images[2].src}" alt="${details.name}" onclick="onClick(this)" class="modal-hover-opacity">
                                             </div>
 
                                             <div class="col">
-                                                <img src="${details.images[3].src}" alt="${details.name}">
+                                                <img src="${details.images[3].src}" alt="${details.name}" onclick="onClick(this)" class="modal-hover-opacity">
                                             </div>
+
+                                            <div class="str-ModalBack"></div>
                                             
+                                            <div id="modal01" class="modal" onclick="this.style.display='none'">
+                                                <div class="modal-content">
+                                                <img id="img01" style="max-width:100%;max-height:100%">
+                                                </div>
+                                            </div>
                                         </div>`;
 }
