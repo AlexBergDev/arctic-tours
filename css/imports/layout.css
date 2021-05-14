@@ -26,6 +26,12 @@ ul {
   height: 400px;
 }
 
+.col-img {
+  background-color: var(--arctic-blue);
+  margin: 3px;
+  flex: 1 1 400px;
+}
+
 .col-1 {
   min-height: 400px;
 }
@@ -40,7 +46,7 @@ ul {
   margin: 3px;
 }
 
-.col img {
+.col img, .col-img img {
   max-height: 400px;
   max-width: 400px;
   flex-shrink: 0;
