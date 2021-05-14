@@ -1,5 +1,5 @@
 .mySlides {
-  margin-top: 70px;
+  margin-top: 68px;
   max-height: 380px;
   overflow: hidden;
 }
@@ -138,7 +138,7 @@
 
 .prev i,
 .next i {
-  font-size: 40px;
+  font-size: 35px;
   -webkit-user-select: none;
   color: var(--light-grey);
 }
