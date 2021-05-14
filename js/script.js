@@ -1,4 +1,4 @@
-const carouselContainer = document.querySelector(".slider");
+const carouselContainer = document.querySelector(".slideshow");
 
 const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=4";
 
@@ -6,15 +6,17 @@ async function fetchPosts() {
 
     try {
         const response = await fetch(url);
-        const results = await response.json();
+        const slider = await response.json();
 
         carouselContainer.innerHTML = "";
 
-        createSlider(results)
+        createSlider(slider)
+        show();
     }
 
     catch(error) {
-        resultsContainer.innerHTML = message("error", error);
+        console.log(error);
+        carouselContainer.innerHTML = message("error", error);
     }
     
 }
@@ -22,10 +24,40 @@ async function fetchPosts() {
 fetchPosts();
 
 function createSlider(slider) {
-    slider.forEach(function(slider) {
-        carouselContainer.innerHTML += `<section class="hero slider-1">
-                                            <h1>${slider.name}</h1>
-                                            <a class="hero-button" href="post.html?id=${slider.id}">Read More</a>
-                                        </section>`;
+    slider.forEach(function(sliders) {
+        carouselContainer.innerHTML += `<div class="mySlides fade">
+                                            <img src="${sliders.images[0].src}" style="width:100%">
+                                            <h1 class="title">${sliders.name}</h1>
+                                            <p class="text">${sliders.short_description}</p>
+                                        </div>`;
     })
+}
+
+function show() {
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
 }
