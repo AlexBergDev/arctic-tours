@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".row");
 
-const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=10";
+const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=14";
 
 async function fetchPosts() {
 
@@ -23,10 +23,11 @@ fetchPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post) {
+        console.log(post);
         resultsContainer.innerHTML += `<div class="col col-1">
                                             <div class="box">
                                                 <h3 class="content">${post.name}</h3>
-                                                <p class="content">${post.description}</p> 
+                                                ${post.short_description}
                                                 <a class="button" href="post.html?id=${post.id}">Read More</a>
                                             </div>
                                         </div>
