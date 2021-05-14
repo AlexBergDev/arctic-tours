@@ -1,11 +1,11 @@
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
 
 /* Hero title */
 h1 {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
@@ -53,20 +53,17 @@ h4 {
 
 /* Global styles */
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--black);
-  letter-spacing: 3px;
-  font-size: 10px;
-  font-weight: 300;
+  letter-spacing: 1.25px;
+  font-size: 12px;
   line-height: 1.85;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 3px;
+  letter-spacing: 2.55px;
   font-size: 12px;
   font-weight: 300;
   text-decoration: none;
@@ -79,8 +76,8 @@ input[type="text"],
 textarea {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 3px;
-  font-size: 10px;
+  letter-spacing: 1.25px;
+  font-size: 12px;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,8 +86,8 @@ textarea {
 label {
   font-family: "Poppins", sans-serif;
   color: var(--black);
-  letter-spacing: 3px;
-  font-size: 10px;
+  letter-spacing: 1.25px;
+  font-size: 12px;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -106,6 +103,7 @@ label {
 
 .error {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1.25px;
   color: var(--red);
   font-size: 12px;
 }
@@ -113,13 +111,13 @@ label {
 /* Tablets */
 @media screen and (max-width: 1024px) {
   p {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 768px) {
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
