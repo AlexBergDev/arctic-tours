@@ -146,7 +146,7 @@
 .next i {
   font-size: 35px;
   -webkit-user-select: none;
-  color: var(--light-grey);
+  color: var(--opacity-white);
 }
 
 /* Tablet */
