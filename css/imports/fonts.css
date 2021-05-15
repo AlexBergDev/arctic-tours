@@ -103,7 +103,7 @@ label {
   display: none;
   font-family: "Poppins", sans-serif;
   color: var(--red);
-  font-size: 0.9rem;
+  font-size: 12px;
   margin-top: 10px;
 }
 
