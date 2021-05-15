@@ -67,11 +67,17 @@
                                 <div class="form-error" id="emailError">Please enter a valid email address</div>
                                 <input type="text" id="email" name="email" placeholder="Your email address..">
                             </div>
+
+                            <div>
+                                <label for="name">Subject*</label>
+                                <div class="form-error" id="subjectError">Subject should be more than 15 characters long</div>
+                                <input type="text" id="subject" name="subject" placeholder="The subject..">
+                            </div>
     
                             <div>
                                 <label for="subject">Message*</label>
-                                <div class="form-error" id="subjectError">Your message must contain at least 25 characters</div>
-                                <textarea type="text" id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
+                                <div class="form-error" id="messageError">Your message must contain at least 25 characters</div>
+                                <textarea type="text" id="message" name="message" placeholder="Type your message here.." style="height:200px"></textarea>
                             </div>
                           
                             <p>By clicking “Submit” below you agree to our terms of service and privacy policy.</p>
