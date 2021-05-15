@@ -49,7 +49,7 @@ email.addEventListener("keyup", checkIfCorrect);
 
 function submitForm(event) {
     event.preventDefault();
-    success.innerHTML = '<div class="success">Your Message was send.</div>';
+    success.innerHTML = '<div class="success">Your message was send.</div>';
     form.reset();
 }
 
