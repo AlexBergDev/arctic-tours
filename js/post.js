@@ -37,11 +37,11 @@ function createHTML(details) {
 
                                             <div class="col-3">
                                                 <div class="box">
+                                                    <p class="date">Posted: 23-05-2021</p>
                                                     ${details.short_description}
                                                     ${details.description}
-                                                    <p class="content">Category: ${details.categories[0].name}</p>
                                                     <p class="author">Author: ${details.tags[0].name}</p>
-                                                    <p class="date">Posted: 23-05-2021</p>
+                                                    <p class="content">Category: ${details.categories[0].name}</p>
                                                 </div>
                                             </div>
 
