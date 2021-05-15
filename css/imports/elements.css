@@ -52,8 +52,8 @@
 }
 
 .back a {
-  margin-top: 46px;
-  margin-bottom: -85px;
+  margin-top: 64px;
+  margin-bottom: -100px;
   margin-left: 10px;
 }
 
@@ -63,6 +63,7 @@ button {
 
 .load-more {
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 /* Error feedback */
