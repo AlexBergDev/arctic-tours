@@ -114,6 +114,13 @@ label {
   font-size: 12px;
 }
 
+.success {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.25px;
+  color: var(--green)
+  font-size: 12px;
+}
+
 /* Tablets */
 @media screen and (max-width: 968px) {
   p {
