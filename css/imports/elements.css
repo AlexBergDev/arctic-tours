@@ -42,6 +42,7 @@
 
 .back-icon i {
   font-size: 40px;
+  padding-right: 14px;
   -webkit-user-select: none;
   color: var(--light-grey);
 }
