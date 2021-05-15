@@ -99,7 +99,7 @@ ul {
 /* --- Mobile Styles --- */
 @media only screen and (max-width: 790px) {
   .col-2 {
-    min-height: 950px;
+    min-height: 980px;
   }
 
   .col-4 {
