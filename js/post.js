@@ -57,5 +57,15 @@ function createHTML(details) {
                                                 <img src="${details.images[3].src}" alt="${details.name}" onclick="onClick(this)" class="modal-hover-opacity">
                                             </div>
 
+                                            <div class="col-3">
+                                                <div class="box">
+                                                <h2>Comments</h2>
+                                                ${details.short_description}
+                                                <textarea type="text" placeholder="Type your comment here.." style="height:100px"></textarea>
+                                                <a class="button" href="#">Post</a>
+                                                <p class="content">no comments</p>
+                                                </div>
+                                            </div>
+
                                         </div>`;
 }
