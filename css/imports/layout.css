@@ -111,24 +111,3 @@ ul {
     min-height: 700px;
   }
 }
-
-/* --- Mobile Styles --- */
-@media only screen and (max-width: 550px) {
-  .col-4 {
-    min-height: 730px;
-  }
-}
-
-/* --- Mobile Styles --- */
-@media only screen and (max-width: 500px) {
-  .col-4 {
-    min-height: 800px;
-  }
-}
-
-/* --- Mobile Styles --- */
-@media only screen and (max-width: 500px) {
-  .col-4 {
-    min-height: 1000px;
-  }
-}
