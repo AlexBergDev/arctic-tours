@@ -35,6 +35,7 @@ h3 {
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: -20px;
 }
 
 /* Footer title */
