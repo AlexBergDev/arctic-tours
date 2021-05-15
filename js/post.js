@@ -32,7 +32,7 @@ function createHTML(details) {
                                         <div class="row">
 
                                             <div class="col">
-                                                <img src="${details.images[0].src}" alt="${details.name}">
+                                                <img src="${details.images[0].src}" alt="${details.name}" onclick="onClick(this)" class="modal-hover-opacity">
                                             </div>
 
                                             <div class="col-3">
