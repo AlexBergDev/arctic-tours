@@ -38,7 +38,7 @@ ul {
 
 .col-2 {
   background-color: var(--arctic-blue);
-  min-height: 800px;
+  min-height: 920px;
 }
 
 .col-3 {
@@ -98,6 +98,10 @@ ul {
 
 /* --- Mobile Styles --- */
 @media only screen and (max-width: 790px) {
+  .col-2 {
+    min-height: 950px;
+  }
+
   .col-4 {
     min-height: 700px;
   }
