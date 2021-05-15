@@ -5,6 +5,8 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
 const success = document.querySelector("#success");
 const button = document.querySelector("#contactButton");
 
@@ -12,16 +14,22 @@ const button = document.querySelector("#contactButton");
 function validateForm(event) {
     event.preventDefault();
 
-    if (checkLength(name.value, 1) === true) {
+    if (checkLength(name.value, 5) === true) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
     }
 
-    if (checkLength(subject.value, 10) === true) {
+    if (checkLength(subject.value, 15) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
+    }
+
+    if (checkLength(message.value, 25) === true) {
+        messageError.style.display = "none";
+    } else {
+        messageError.style.display = "block";
     }
 
     if (validateEmail(email.value) === true) {
@@ -36,10 +44,10 @@ form.addEventListener("submit", validateForm);
 
 function checkIfCorrect() {
 
-    if (checkLength(name.value, 1) && checkLength(subject.value, 4) && validateEmail(email.value)) {
+    if (checkLength(name.value, 5) && checkLength(subject.value, 15) && checkLength(message.value, 25) && validateEmail(email.value)) {
         form.addEventListener("submit", submitForm);
     } else {    
-        message.innerHTML = "";
+        notification.innerHTML = "";
     }
 }
 
