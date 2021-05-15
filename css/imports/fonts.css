@@ -117,7 +117,7 @@ label {
 .success {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1.25px;
-  color: var(--green)
+  color: var(--green);
   font-size: 12px;
 }
 
