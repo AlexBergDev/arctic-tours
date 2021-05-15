@@ -86,7 +86,9 @@ ul {
 }
 
 .date {
+  margin-top: 14px;
   display: flex;
+  font-size: 10px;
   flex-direction: column;
   margin-bottom: 1em;
   font-style: italic;
