@@ -1,6 +1,9 @@
 const resultsContainer = document.querySelector(".row");
+btnMore = document.getElementById('more');
 
-const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=14";
+let length = 5;
+
+const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=" + length;
 
 async function fetchPosts() {
 
@@ -11,6 +14,9 @@ async function fetchPosts() {
         resultsContainer.innerHTML = "";
 
         createHTML(getResults);
+        btnMore.addEventListener('click', function () {
+            length += 5;
+        });
     }
 
     catch(error) {
