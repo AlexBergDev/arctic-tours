@@ -29,7 +29,6 @@ fetchPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post) {
-        console.log(post);
         resultsContainer.innerHTML += `<div class="col col-1">
                                             <div class="box">
                                                 <h3 class="content">${post.name}</h3>
