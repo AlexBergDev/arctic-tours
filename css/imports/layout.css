@@ -96,19 +96,8 @@ ul {
   display: block;
 }
 
-/* Tablet */
-@media screen and (max-width: 968px) {
-  .col-4 {
-    min-height: 750px;
-  }
-}
-
 /* --- Mobile Styles --- */
 @media only screen and (max-width: 790px) {
-  .col-2 {
-    min-height: 750px;
-  }
-
   .col-4 {
     min-height: 700px;
   }
