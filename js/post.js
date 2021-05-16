@@ -1,4 +1,5 @@
 const resultsContainer = document.querySelector(".row");
+const titleContainer = document.querySelector("title");
 
 const queryString = document.location.search;
 
@@ -15,8 +16,10 @@ async function fetchPosts() {
         const details = await response.json();
 
         resultsContainer.innerHTML = "";
+        titleContainer.innerHTML = "";
 
         createHTML(details);
+        createTitle(details);
     }
 
     catch(error) {
@@ -68,4 +71,8 @@ function createHTML(details) {
                                             </div>
 
                                         </div>`;
+}
+
+function createTitle(details) {
+        titleContainer.innerHTML += `Arctic Tours - ${details.name}`;
 }
