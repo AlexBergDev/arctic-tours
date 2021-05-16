@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".row");
 
-const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=12";
+const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=15";
 
 async function fetchPosts() {
 
@@ -39,34 +39,3 @@ function createHTML(posts) {
                                         </div>`;
     })
 }
-
-
-var work = document.querySelector("#workOuterShell");
-var items = Array.from(work.querySelectorAll(".item"));
-var loadMore = document.getElementById("loadMore");
-maxItems = 4;
-loadItems = 4;
-hiddenClass = "hiddenStyle";
-hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
-
-items.forEach(function (item, index) {
-  console.log(item.innerText, index);
-  if (index > maxItems - 1) {
-    item.classList.add(hiddenClass);
-  }
-});
-
-loadMore.addEventListener("click", function () {
-  [].forEach.call(document.querySelectorAll("." + hiddenClass), function (
-    item,
-    index
-  ) {
-    if (index < loadItems) {
-      item.classList.remove(hiddenClass);
-    }
-
-    if (document.querySelectorAll("." + hiddenClass).length === 0) {
-      loadMore.style.display = "none";
-    }
-  });
-});
