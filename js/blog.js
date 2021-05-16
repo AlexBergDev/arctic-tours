@@ -24,8 +24,7 @@ fetchPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post) {
-        resultsContainer.innerHTML += `<div class="item">
-                                            <div class="col col-1">
+        resultsContainer.innerHTML += `<div class="col col-1">
                                                 <div class="box">
                                                     <h3 class="content">${post.name}</h3>
                                                     ${post.short_description}
@@ -35,7 +34,6 @@ function createHTML(posts) {
 
                                             <div class="col post-image">
                                                 <a href="post.html?id=${post.id}"><img src="${post.images[0].src}" alt="${post.name}"></a>
-                                            </div>
                                         </div>`;
     })
 }
