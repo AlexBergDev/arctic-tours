@@ -1,4 +1,5 @@
 const resultsContainer = document.querySelector(".row");
+const work = document.querySelector("#workOuterShell");
 
 const url = "https://alexberg.de/api/arctic-tours/wp-json/wc/store/products?per_page=15";
 
@@ -11,6 +12,7 @@ async function fetchPosts() {
         resultsContainer.innerHTML = "";
 
         createHTML(getResults);
+        viewMore();
         
     }
 
@@ -24,7 +26,7 @@ fetchPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post) {
-        resultsContainer.innerHTML += `<div class="col col-1">
+        resultsContainer.innerHTML += `<div class="col col-1 item">
                                                 <div class="box">
                                                     <h3 class="content">${post.name}</h3>
                                                     ${post.short_description}
@@ -32,8 +34,8 @@ function createHTML(posts) {
                                                 </div>
                                             </div>
 
-                                            <div class="col post-image">
+                                            <div class="col post-image item">
                                                 <a href="post.html?id=${post.id}"><img src="${post.images[0].src}" alt="${post.name}"></a>
-                                        </div>`;
+                                            </div>`;
     })
 }
