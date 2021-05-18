@@ -27,7 +27,6 @@ ul {
 }
 
 .col-img {
-  background-color: var(--arctic-blue);
   margin: 3px;
   flex: 1 1 400px;
 }
@@ -37,7 +36,6 @@ ul {
 }
 
 .col-2 {
-  background-color: var(--arctic-blue);
   min-height: 920px;
 }
 
@@ -72,12 +70,6 @@ ul {
 
 .down {
   margin-top: 100px;
-}
-
-.post-image {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .author {
