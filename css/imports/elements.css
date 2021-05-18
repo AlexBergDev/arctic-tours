@@ -31,6 +31,7 @@
   border: 2px solid var(--light-grey);
   padding: 6px 8px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button-light a:hover {
@@ -52,7 +53,7 @@
   transition: all 0.3s ease;
 }
 
-.back a {
+.back-link a {
   margin-top: 64px;
   margin-bottom: -100px;
   margin-left: 10px;
@@ -62,7 +63,11 @@ button {
   background-color: transparent;
 }
 
-.load-more {
+.end-button {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+  margin-bottom: 40px;
   justify-content: center;
   margin-bottom: 80px;
 }
@@ -87,6 +92,7 @@ button {
   width: 80px;
   height: 80px;
 }
+
 .loader div {
   position: absolute;
   border: 4px solid var(--dark-blue);
@@ -94,6 +100,7 @@ button {
   border-radius: 50%;
   animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+
 .loader div:nth-child(2) {
   animation-delay: -0.5s;
 }
@@ -179,7 +186,7 @@ button {
   }
 }
 
-/* load more */
+/* View more */
 .hiddenStyle {
   position: absolute;
   overflow: hidden;
@@ -189,7 +196,6 @@ button {
   margin: -1px;
   padding: 0;
   border: 0;
-  background: blue;
 }
 
 /* Tablet */
