@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -96,5 +100,9 @@ ul {
 
   .col-4 {
     min-height: 700px;
+  }
+
+  .lower {
+    margin-bottom: 60px;
   }
 }
