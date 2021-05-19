@@ -216,4 +216,8 @@ button {
   .navigation-back a {
     margin-top: 38px;
   }
+
+  .end-button {
+    margin-top: -50px;
+  }
 }
