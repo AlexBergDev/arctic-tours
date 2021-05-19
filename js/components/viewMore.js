@@ -1,28 +1,29 @@
 function viewMore() {
-    const items = Array.from(work.querySelectorAll(".item"));
-    const loadMore = document.getElementById("loadMore");
-    maxItems = 8;
-    loadItems = 8;
-    hiddenClass = "hiddenStyle";
-    hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
-    items.forEach(function (item, index) {
-    if (index > maxItems - 1) {
-        item.classList.add(hiddenClass);
-    }
+    const cols = Array.from(loadContainer.querySelectorAll(".col"));
+    colHidden = "col-hidden";
+    hidden = Array.from(document.querySelectorAll(".col-hidden"));
+    shownCol = 8;
+    viewCol = 8;
+
+    cols.forEach(function (col, current) {
+        if (current > shownCol - 1) {
+            col.classList.add(colHidden);
+        }
     });
 
-    loadMore.addEventListener("click", function () {
-        [].forEach.call(document.querySelectorAll("." + hiddenClass), function (
-            item,
-            index
+    viewMoreCol.addEventListener("click", function () {
+        [].forEach.call(document.querySelectorAll("." + colHidden), function (
+            col,
+            current
         ) {
-            if (index < loadItems) {
-            item.classList.remove(hiddenClass);
+            
+            if (current < viewCol) {
+            col.classList.remove(colHidden);
             }
 
-            if (document.querySelectorAll("." + hiddenClass).length === 0) {
-            loadMore.style.display = "none";
+            if (document.querySelectorAll("." + colHidden).length === 0) {
+            viewMoreCol.style.display = "none";
             }
         });
     });
