@@ -34,7 +34,7 @@ function createHTML(posts) {
                                                 </div>
                                             </div>
 
-                                            <div class="col post-image item">
+                                            <div class="col lower item">
                                                 <a href="post.html?id=${post.id}"><img src="${post.images[0].src}" alt="${post.name}"></a>
                                             </div>`;
     })
