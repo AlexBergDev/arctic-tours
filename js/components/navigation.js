@@ -26,3 +26,5 @@ function navigation() {
 }
 
 navigation();
+
+// Made with the help of this tutorial: https://www.youtube.com/watch?v=gXkqy0b4M5g&t=448s
